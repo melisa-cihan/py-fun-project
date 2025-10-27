@@ -1,4 +1,4 @@
-from .calculator.Calculator import Calculator
+from .calculator import Calculator
 
 def main():
     # instantiate calculators
