@@ -1,0 +1,24 @@
+# 
+# Many popular Python packages are distributed through the https://pypi.org
+# repository (pypi: Python package index)
+# 
+# Show currently installed packages:
+# - pip freeze                          # show currently installed packages
+# - pip install <package>
+# - pip install -r requirements.txt
+# - pip uninstall <package>
+# - pip show <package>                  # show package information
+# - pip list -v                         # show local installation paths
+# - pip list --outdated | --o
+# 
+# Use file requirements.txt:
+# https://www.educative.io/answers/how-to-use-the-requirementstxt-file-in-python
+# 
+# See the list of repositories where pip downloaded packages from:
+# https://stackoverflow.com/questions/53150401/how-can-i-list-all-the-repo-urls-that-my-pip-uses-to-install-packages
+# - pip list --format=freeze | cut -d= -f1 | xargs pip show | awk '/^Name/{printf $2} /^Home-page/{print ": "$2}'
+# 
+
+--extra-index-url=https://pypi.org/project/setuptools
+setuptools==80.9.0      # match exact version
+sphinx                  # use latest version, ==8.2.3 (Oct 2025)
